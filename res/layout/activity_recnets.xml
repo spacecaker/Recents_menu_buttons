@@ -36,4 +36,33 @@
         android:layout_marginTop="34dp"
         android:text="TaskManager" />		
 
+    <com.example.recentsmenu.BackButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="34dp"
+        android:text="Back" />
+    
+    <com.example.recentsmenu.DeleteButton
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="34dp"
+        android:text="Delete" />
+    
+    <com.example.recentsmenu.EditButton
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="34dp"
+        android:text="Edit" />    
 </RelativeLayout>
