@@ -1,7 +1,9 @@
 package com.example.recentsmenu;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.provider.Settings;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
@@ -40,6 +42,13 @@ public class SearchButton extends Button{
         		                    Toast.LENGTH_LONG).show(); 	         	    			
         	    		}	
                     }
-               });
+               });		
+        	
+            ContentResolver resolver = context.getContentResolver();
+            int mHideRecentSearch = Settings.System.getInt(resolver, "hide_samsung_recents", 0);
+            if (mHideRecentSearch == 1)
+                this.setVisibility(View.GONE);
+            else
+                this.setVisibility(View.VISIBLE);        	
 	}
 }

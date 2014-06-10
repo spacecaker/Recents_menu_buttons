@@ -1,0 +1,5 @@
+<PreferenceScreen android:title="@string/app_name" xmlns:android="http://schemas.android.com/apk/res/android" >
+        <PreferenceCategory android:title="@string/app_name">            
+        	<CheckBoxPreference android:title="Show/Hide Recents Shortcuts" android:summary="hides or shows the three quick shortcut buttons in the Recents Menu (Reboot to apply change)" android:key="hide_samsung_recents" android:defaultValue="false"/>
+        </PreferenceCategory>     	
+</PreferenceScreen>
